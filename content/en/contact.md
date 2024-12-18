@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: "Newsletter"
 featured_image: ''
 omit_header_text: true
 description: We'd love to hear from you
@@ -9,6 +9,6 @@ menu: main
 ---
 
 
-This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the shortcode to make it work. Check out [Formspree](https://formspree.io/) for a simple, free form service.
+Enter your details to sign up to the newsletter
 
-{{< form-contact action="https://formspree.io/f/xanygadk" >}}
+{{< newsletter action="https://formspree.io/f/xanygadk" >}}
