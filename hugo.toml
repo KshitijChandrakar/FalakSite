@@ -1,7 +1,7 @@
 baseURL = 'https://falak.com'
 languageCode = 'en-us'
 title = 'Falak: The Inclusity Club'
-theme = 'ananke'
+theme = 'ananke2'
 resourceDir = "resources"
 
 defaultContentLanguage = "en"
@@ -38,8 +38,34 @@ background_color_class = "bg-black"
 featured_image_class = "cover bg-top"
 # choose a color dimming class for the page or site header from any on this page: https://tachyons.io/docs/themes/skins/, preface it with "bg-" and add the value such as "-X0" where X is in [1,9]
 cover_dimming_class = "bg-black-60"
-recent_posts_number = 3
+recent_posts_number = 1
 
-[[params.ananke_socials]]
-name = "instagram"
-url = "https://www.instagram.com/falak_upes/"
+
+[params.ananke.social.share]
+networks = [
+  "email1",
+  "facebook",
+  "bluesky",
+  "linkedin"
+]
+
+[params.ananke.social.follow]
+new_window_icon = false
+networks = [
+  "email1",
+  "instagram"
+]
+
+[params.ananke.social.instagram]
+username = "falak_upes"
+[params.ananke.social.email1]
+username = "falak.upes@stu.upes.ac.in"
+
+[[ananke.social.networks]]
+slug = "email1"
+label = "email1"
+color = "#0077b5"
+profile = "mailto:%s"
+icon = "linkedin" # font awesome brand icon name
+link = "https://www.linkedin.com/shareArticle"
+#separator = "&"
