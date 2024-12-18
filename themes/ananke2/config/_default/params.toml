@@ -38,9 +38,10 @@ text = "permalink"
 [[ananke.social.networks]]
 slug = "email"
 label = "Email"
-profile = false
+profile = "mailto:%s"
 icon = "envelope" # font awesome free icon name
 link = "mailto:"
+
 [ananke.social.networks.particles]
 body = "permalink"
 subject = "title"

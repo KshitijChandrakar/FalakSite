@@ -27,13 +27,15 @@ priority = 0.5
 filename = "sitemap.xml"
 
 [params]
+custom_css = ["palate.css"]
 text_color = ""
 author = ""
-favicon = ""
+favicon = "Falak_Logo.png"
 site_logo = ""
 description = "The Inclusity Club"
+body_classes = ""
 # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-background_color_class = "bg-black"
+background_color_class = "custom_color2"
 # choose fitting and alignment styles for the featured image using Tachyons classes such as "cover|contain" for fitting and "bg-top|bg-center|bg-bottom" for alignment, or add any other class space-separated to customize further
 featured_image_class = "cover bg-top"
 # choose a color dimming class for the page or site header from any on this page: https://tachyons.io/docs/themes/skins/, preface it with "bg-" and add the value such as "-X0" where X is in [1,9]
@@ -43,7 +45,7 @@ recent_posts_number = 1
 
 [params.ananke.social.share]
 networks = [
-  "email1",
+  "email",
   "facebook",
   "bluesky",
   "linkedin"
@@ -52,13 +54,13 @@ networks = [
 [params.ananke.social.follow]
 new_window_icon = false
 networks = [
-  "email1",
+  "email",
   "instagram"
 ]
 
 [params.ananke.social.instagram]
 username = "falak_upes"
-[params.ananke.social.email1]
+[params.ananke.social.email]
 username = "falak.upes@stu.upes.ac.in"
 
 [[ananke.social.networks]]

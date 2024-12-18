@@ -1,7 +1,7 @@
 ---
 title: "About"
 description: ""
-featured_image: '/images/Victor_Hugo-Hunchback.jpg'
+featured_image: ''
 menu:
   main:
     weight: 1
