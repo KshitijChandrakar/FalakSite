@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Falak</title>
+    <title>  on Falak</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Falak</description>
+    <description>Recent content in   on Falak</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -12,14 +12,14 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>Blah Blah Blah, about section goes here</description>
+      <description>Eat plants, meow, and throw up because i ate plants. Immediately regret falling into bathtub to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly do not try to mix old food with new one to fool me!. I see a bird i stare at it i meow at it i do a wiggle come here birdy the dog smells bad. One of these days i&amp;rsquo;m going to get that red dot, just you wait and see really likes hummus but cat cat moo moo lick ears lick paws, for give me attention or face the wrath of my claws twitch tail in permanent irritation claws in your leg yet i just saw other cats inside the house and nobody ask me before using my litter box.</description>
     </item>
     <item>
-      <title>Article</title>
-      <link>http://localhost:1313/post/</link>
+      <title>Catum Ipsum</title>
+      <link>http://localhost:1313/post/catumipusm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/</guid>
-      <description>Blah Blah Blah, about section goes here</description>
+      <guid>http://localhost:1313/post/catumipusm/</guid>
+      <description>Eat plants, meow, and throw up because i ate plants. Immediately regret falling into bathtub to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly do not try to mix old food with new one to fool me!. I see a bird i stare at it i meow at it i do a wiggle come here birdy the dog smells bad. One of these days i&amp;rsquo;m going to get that red dot, just you wait and see really likes hummus but cat cat moo moo lick ears lick paws, for give me attention or face the wrath of my claws twitch tail in permanent irritation claws in your leg yet i just saw other cats inside the house and nobody ask me before using my litter box.</description>
     </item>
     <item>
       <title>Newsletter</title>

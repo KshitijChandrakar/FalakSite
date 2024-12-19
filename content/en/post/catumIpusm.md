@@ -1,10 +1,8 @@
 ---
-title: "About"
+title: "Catum Ipsum"
 description: ""
 featured_image: ''
-menu:
-  main:
-    weight: 1
+menu: none
 ---
 
 

@@ -3,6 +3,7 @@
 .custom_color3{ background-color: #fbdf61}
 .custom_color4{ background-color: #ff6e53}
 .custom_color5{ background-color: #6c0022}
+.custom_color6{ background-color: #a0413a}
 .transparent{ background-color: #00000000}
 .text_custom_color1{ color: #020025}
 .text_custom_color2{ color: #2b7a7f}
@@ -10,3 +11,9 @@
 .text_custom_color4{ color: #ff6e53}
 .text_custom_color5{ color: #6c0022}
 .transparent{ background-color: #00000000}
+.coverHeader{
+background-size: contain; /* Ensure the image covers the entire header */
+background-position: center; /* Center the image */
+width: 100%;
+height: auto; /* Adjust the height based on the image's aspect ratio */
+}
