@@ -10,6 +10,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>http://localhost:1313/post/a-akkbdsfkjbf/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>http://localhost:1313/post/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -31,6 +35,10 @@
     <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/thankyou/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/post/cats-who-tf-knows/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

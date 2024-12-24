@@ -17,3 +17,10 @@ background-position: center; /* Center the image */
 width: 100%;
 height: auto; /* Adjust the height based on the image's aspect ratio */
 }
+.trialXYZ{
+        background: url('images/yourimage.jpg') no-repeat center center fixed;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }

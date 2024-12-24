@@ -1,8 +1,13 @@
-<nav class="pv3 ph3 ph4-ns" role="navigation">
+<nav class="p0  {{ .Site.Params.background_color_class | default "bg-black" }}" role="navigation">
+  <div class="{{ $.Site.Params.nav_dimming_class }}">
   <div class="flex-l justify-between items-center center">
     <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
       {{ with .Site.Params.site_logo }}
-        <img src="{{ relURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+        <div class="flex items-center">
+          <img src="{{ relURL . }}" class="w100 mw4-ns" alt="{{ $.Site.Title }}" />
+          <h1 class ="p0 m0">{{ $.Site.Title }}</h1>
+
+        </div>
       {{ else }}
         {{ .Site.Title }}
       {{ end }}
@@ -22,5 +27,6 @@
       {{ end }}
       {{ partialCached "social/follow.html" . }}
     </div>
+  </div>
   </div>
 </nav>
