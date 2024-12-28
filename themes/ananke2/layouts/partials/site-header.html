@@ -1,10 +1,12 @@
 {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+{{ $header_class :=  site.Params.header_class | default "" }}
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image_class := site.Params.featured_image_class | default "cover bg-top" }}
   <div class="flex flex-column">
     {{ partial "site-navigation.html" .}}
-  <header class="{{ $featured_image_class }}" style = "background-image: url('{{ $featured_image }}');" >
+  <header class= "{{ $header_class }}">
+    <img src='{{ $featured_image }}'  class="{{ $featured_image_class }}" alt="">
     {{ $cover_dimming_class := site.Params.cover_dimming_class | default "bg-black-60" }}
     <div class="{{ $cover_dimming_class }}">
 
