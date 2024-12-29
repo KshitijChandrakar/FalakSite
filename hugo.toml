@@ -86,7 +86,7 @@ sectionPagesMenu = 'main2'
     weight = 20
   [[menus.main2]]
     name = 'Blog'
-    pageRef = '/Blog'
+    pageRef = '/post'
     weight = 30
   [[menus.main2]]
     name = 'Resources'
