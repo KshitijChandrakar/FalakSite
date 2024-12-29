@@ -11,16 +11,3 @@
 .text_custom_color4{ color: #ff6e53}
 .text_custom_color5{ color: #6c0022}
 .transparent{ background-color: #00000000}
-.coverHeader{
-background-size: contain; /* Ensure the image covers the entire header */
-background-position: center; /* Center the image */
-width: 100%;
-height: auto; /* Adjust the height based on the image's aspect ratio */
-}
-.trialXYZ{
-        background: url('images/yourimage.jpg') no-repeat center center fixed;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
-      }

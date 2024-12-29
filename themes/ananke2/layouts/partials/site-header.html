@@ -6,7 +6,7 @@
   <div class="flex flex-column">
     {{ partial "site-navigation.html" .}}
   <header class= "{{ $header_class }}">
-    <img src='{{ $featured_image }}'  class="{{ $featured_image_class }}" alt="">
+    <img src='{{ $featured_image }}'  class="{{ $featured_image_class }}" alt="Site header image">
     {{ $cover_dimming_class := site.Params.cover_dimming_class | default "bg-black-60" }}
     <div class="{{ $cover_dimming_class }}">
 
