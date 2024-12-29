@@ -5,8 +5,8 @@
     <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
       {{ with .Site.Params.site_logo }}
         <div class="flex items-center">
-          <img src="{{ relURL . }}" class="w100 mw4-ns" alt="{{ $.Site.Title }}" />
-          <h1 class ="p0 m0">{{ $.Site.Title }}</h1>
+          <img src="{{ relURL . }}" class="w20 mw3-ns" alt="{{ $.Site.Title }}" />
+          <h2 class ="p0 m0">{{ $.Site.Title }}</h2>
 
         </div>
       {{ else }}
@@ -14,14 +14,15 @@
       {{ end }}
     </a>
     <div class="flex-l items-center">
-      {{ partial "i18nlist.html" . }}
-      {{ if .Site.Menus.main }}
+      {{ if .Site.Menus.main2 }}
         <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
           {{ range .Site.Menus.main2 }}
           <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
+            <h4>
             <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
               {{ .Name }}
             </a>
+            </h4>
           </li>
           {{ end }}
         </ul>

@@ -32,7 +32,7 @@ text_color = ""
 author = ""
 navClasses = ""
 favicon = "Falak_Logo.png"
-site_logo = ""
+site_logo = "Falak_Logo.png"
 description = "The Inclusity Club"
 body_classes = ""
 header_class = "height75 custom_color5 height-fit-content"
@@ -44,6 +44,7 @@ featured_image_class = "h-auto custom_color5 center db coverHeader"
 cover_dimming_class = "transparent"
 nav_dimming_class = "bg-black-20"
 recent_posts_number = 1
+mainSections = "blog"
 
 
 [params.ananke.social.share]
@@ -56,22 +57,17 @@ networks = [
 new_window_icon = false
 networks = [
   "email",
-  "instagram"
+  "instagram",
+  "linkedin"
 ]
 
+[params.ananke.social.linkedin]
+username="company/falak-upes"
 [params.ananke.social.instagram]
 username = "falak_upes"
 [params.ananke.social.email]
 username = "falak.upes@stu.upes.ac.in"
 
-[[ananke.social.networks]]
-slug = "email1"
-label = "email1"
-color = "#0077b5"
-profile = "mailto:%s"
-icon = "linkedin" # font awesome brand icon name
-link = "https://www.linkedin.com/shareArticle"
-#separator = "&"
 
 sectionPagesMenu = 'main2'
 
