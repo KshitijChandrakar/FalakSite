@@ -1,1 +1,9 @@
-{{/* For Users's overwrite */}}
+{{ range site.Params.custom_js }}
+  {{ $js := resources.Get . }}
+  {{ if $js }}
+    {{ $js = $js | fingerprint }} <!-- Optional for integrity checks -->
+    <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" charset="utf-8"></script>
+  {{ else }}
+    <script src="{{ . | relURL }}" charset="utf-8"></script>
+  {{ end }}
+{{ end }}

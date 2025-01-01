@@ -1,0 +1,19 @@
+{{/*
+  style/GetScript
+  Get a script asset stored at `/assets/ananke/js`
+
+  @author @regisphilibert
+
+  @context String (.)
+
+  @access private
+
+  @returns Resource
+
+*/}}
+{{ $resource := dict }}
+{{ with resources.Get (print "/static" .) }}
+  {{ $resource = . }}
+{{ end }}
+
+{{ return $resource }}
