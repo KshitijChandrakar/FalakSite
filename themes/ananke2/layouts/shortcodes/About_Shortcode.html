@@ -1,0 +1,4 @@
+<h2>About</h2>
+{{ with .Site.GetPage "section" "About" }}
+  {{ .Summary }}
+{{ end }}
