@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.onload = function() {
-  var randomElement = "custom_color" + (Math.floor(Math.random() * 5) + 1);
+  var randomElement = "rainbow_color" + (Math.floor(Math.random() * 5) + 1);
   console.log('Page loaded!');
   document.querySelector('body').classList.remove("custom_color2");
   document.querySelector('body').classList.add(randomElement);
