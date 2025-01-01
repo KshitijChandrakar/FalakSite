@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "near-black" }}">
       {{ .Content }}
     </article>
 
@@ -49,7 +49,7 @@
 
           {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
           {{ with $.Site.GetPage "section" $section_name }}
-            <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
+            <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-near-black white dim w4 tc">{{ i18n "allTitle" . }}</a>
           {{ end }}
           </section>
         {{ end }}
