@@ -18,6 +18,10 @@ body{
 main {
   scroll-snap-align: start;
 }
-footer {
+.arrow {
+  
+}
 
+.arrow[disabled] {
+  @apply bg-light-gray;
 }

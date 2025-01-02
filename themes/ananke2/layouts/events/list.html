@@ -1,15 +1,21 @@
 {{ define "main" }}
-<div class="flex items-center justify-center">
-  <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | default "near-black" }}">
-    {{ .Content }}
-  </div>
-</div>
-
-      <section class="flex-ns flex-wrap justify-around mt5 mr5 ml5">
-      {{ range first 5 (where .Site.RegularPages "Section" "events") }}
-      <div class="relative w-100 w-30-l mb4 bg-white">
-       {{ .Render "summary-with-image" }}
-      </div>
+<section class="flex-ns flex-wrap justify-around mt5 flex-column items-center" >
+  <div class="flex justify-center items-center">
+  {{ $pages := where .Site.RegularPages "Section" "events" }}
+  {{ $pages = $pages.ByTitle }}
+  {{ $paginator := .Paginate $pages 3}}
+  <a href="{{ with $paginator.Prev }}{{ .URL }}{{ end }}" ><button id="prevBtn" class="arrow material-symbols-outlined" {{ if not $paginator.HasPrev }}disabled{{ end }}>keyboard_arrow_left</button></a>
+  <div class="aaa" id="content">
+    {{ range  $paginator.Pages }}
+    <a href="{{ .RelPermalink }}">
+      {{ with partialCached "func/GetFeaturedImage" . . }}
+      <img src="{{ . }}" alt="" class="mw5 ph2">
       {{ end }}
-      </section>
+    </a>
+    {{ end }}
+  </div>
+  <a href="{{ with $paginator.Next }}{{ .URL }}{{ end }}"><button id="nextBtn" class="arrow material-symbols-outlined" {{ if not $paginator.HasNext }}disabled{{ end }}>keyboard_arrow_right</button></a>
+</div>
+{{ template "_internal/pagination.html" . }}
+</section>
 {{ end }}
