@@ -1,0 +1,8 @@
+  {{/*
+    GetHeaderImage - Fetches the featured image from front matter or Page Resources.
+  */}}
+{{ $linktoimage := "" }}
+{{ with  $.CurrentSection.Resources.GetMatch .Params.header_image}}
+{{ $linktoimage = .RelPermalink}}
+{{ end }}
+{{ return $linktoimage }}

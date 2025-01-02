@@ -27,7 +27,7 @@ priority = 0.5
 filename = "sitemap.xml"
 
 [params]
-custom_css = ["palate.css", "animations.css"]
+custom_css = ["palate.css", "animations.css", "EventsStyles.css"]
 custom_js = ["redirectScriptColor.js"]
 text_color = ""
 author = ""
@@ -36,7 +36,7 @@ favicon = "Falak_Logo.png"
 site_logo = "Falak_Logo.png"
 description = "The Inclusity Club"
 body_classes = "custom_color2"
-main_classes = "avenir bg-near-white"
+main_classes = "avenir bg-near-white pb3 pt3"
 header_class = "height75 height-fit-content"
 # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
 background_color_class = "transparent"
@@ -77,16 +77,15 @@ sectionPagesMenu = 'main2'
   [[menus.main2]]
     name = 'About'
     pageRef = '/About'
-    weight = 10
   [[menus.main2]]
     name = 'Newsletter'
     pageRef = '/Newsletter'
-    weight = 20
+  [[menus.main2]]
+    name = 'Events'
+    pageRef = '/Events'
   [[menus.main2]]
     name = 'Blog'
     pageRef = '/blog'
-    weight = 30
   [[menus.main2]]
     name = 'Resources'
     pageRef = '/Resources'
-    weight = 30

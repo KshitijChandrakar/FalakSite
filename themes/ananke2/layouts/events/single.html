@@ -1,0 +1,24 @@
+{{ define "header" }}
+   {{/* We can override any block in the baseof file be defining it in the template */}}
+  {{ partial "site-navigation.html" . }}
+{{ end }}
+
+
+{{ define "main" }}
+  <div class="flex vh-100">
+    {{ with .Params.featured_image }}
+      <img src="{{ . | relURL }}" alt="Featured Image" class="h-100">
+    {{ end }}
+
+
+    <div class="w-60 ml-autooverflow-scroll pa4" style = "overflow-y: scroll;">
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
+      {{ $xyz := partialCached "func/GetHeaderImage" . . }}
+      <div class="bg-before" style="background-image: linear-gradient(rgba(244,244,244,0.8), rgba(244,244,244,0.8)), url({{ $xyz | absURL}});">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+  {{ end }}

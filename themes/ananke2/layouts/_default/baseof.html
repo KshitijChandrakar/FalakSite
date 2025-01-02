@@ -59,11 +59,10 @@
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}} {{ $environment }}">
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main class="pb7 pt3 {{ .Param "main_classes"}}" role="main">
+    <main class="{{ .Param "main_classes"}}" role="main">
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
     {{ partial "site-scripts.html" . }}
-    ipt>
   </body>
 </html>

@@ -1,0 +1,23 @@
+.fixed-div {
+    position: fixed; /* Fixed position */
+    top: 10px;       /* Distance from the top */
+    left: 10px;     /* Distance from the right */
+    padding: 10px;
+    z-index: 0;   /* Ensures it stays above other elements */
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+nav {
+  scroll-snap-align: start;
+}
+body{
+  scroll-snap-type: y proximity;
+}
+main {
+  scroll-snap-align: start;
+}
+footer {
+
+}

@@ -6,9 +6,9 @@
 </div>
 
       <section class="flex-ns flex-wrap justify-around mt5 mr5 ml5">
-      {{ range first 5 (where .Site.RegularPages "Section" "resources") }}
+      {{ range first 5 (where .Site.RegularPages "Section" "events") }}
       <div class="relative w-100 w-30-l mb4 bg-white">
-       {{ .Render "plainsummary" }}
+       {{ .Render "summary-with-image" }}
       </div>
       {{ end }}
       </section>
