@@ -1,0 +1,20 @@
+<section class="flex-ns flex-wrap justify-around mt5 flex-column items-center">
+  <h2> Previous Events: </h2>
+  <div class="flex justify-center items-center">
+    {{ $pages := first 6 (where .Site.RegularPages "Section" "events") }}
+    {{ $pages = $pages.ByTitle }}
+    {{ $paginator := .Paginate $pages 3}}
+    <button id="prevBtn" class="arrow material-symbols-outlined" data-url="{{ with $paginator.Prev }}{{ .URL }}{{ end }}" {{ if not $paginator.HasPrev }}disabled{{ end }}>keyboard_arrow_left</button>
+    <div class="aaa" id="content">
+      {{ range  $paginator.Pages }}
+      <a href="{{ .RelPermalink }}">
+        {{ with partialCached "func/GetFeaturedImage" . . }}
+        <img src="{{ . }}" alt="" class="mw5 ph2">
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+    <button id="nextBtn" class="arrow material-symbols-outlined" data-url="{{ with $paginator.Next }}{{ .URL }}{{ end }}" {{ if not $paginator.HasNext }}disabled{{ end }}>keyboard_arrow_right</button>
+    <script src="Ajax.js" charset="utf-8"></script>
+  </div>
+</section>

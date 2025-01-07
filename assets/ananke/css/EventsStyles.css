@@ -12,14 +12,22 @@ html {
 nav {
   scroll-snap-align: start;
 }
+
+header {
+  scroll-snap-align: start;
+}
 body{
   scroll-snap-type: y proximity;
 }
 main {
   scroll-snap-align: start;
 }
+
+footer {
+  scroll-snap-align: end;
+}
 .arrow {
-  
+
 }
 
 .arrow[disabled] {

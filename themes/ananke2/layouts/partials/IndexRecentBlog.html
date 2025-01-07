@@ -1,0 +1,10 @@
+<section class="flex-ns flex-wrap justify-around mt5 flex-column items-center">
+  <h2>Recent Blog</h2>
+  <div class="flex justify-center items-center">
+    {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+    <div class="relative w-100 w-30-l mb4 mh4 bg-white">
+      {{ .Render "summary" }}
+    </div>
+    {{ end }}
+  </div>
+</section>

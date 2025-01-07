@@ -1,0 +1,10 @@
+<section class="flex-ns flex-wrap justify-around mt5 flex-column items-center" >
+  <div class="">
+    <h2>About</h2>
+  </div>
+  <div class="">
+    {{ with .Site.GetPage "section" "about" }}
+    {{ .Summary }}
+    {{ end }}
+  </div>
+</section>

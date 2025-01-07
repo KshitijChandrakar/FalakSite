@@ -9,7 +9,7 @@
     {{ range  $paginator.Pages }}
     <a href="{{ .RelPermalink }}">
       {{ with partialCached "func/GetFeaturedImage" . . }}
-      <img src="{{ . }}" alt="" class="mw5 ph2">
+      <img src="{{ . }}" alt="" class="mw-100vh ph2">
       {{ end }}
     </a>
     {{ end }}

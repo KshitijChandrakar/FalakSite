@@ -2,103 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/FalakSite/</loc>
+    <loc>//localhost:1313/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/about/</loc>
+    <loc>//localhost:1313/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/blog/</loc>
+    <loc>//localhost:1313/blog/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/blog/essay/</loc>
+    <loc>//localhost:1313/blog/essay/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/blog/aaaa/</loc>
+    <loc>//localhost:1313/blog/aaaa/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/</loc>
+    <loc>//localhost:1313/events/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper/</loc>
+    <loc>//localhost:1313/events/heartstopper/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper1/</loc>
+    <loc>//localhost:1313/events/heartstopper1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper2/</loc>
+    <loc>//localhost:1313/events/heartstopper2/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper3/</loc>
+    <loc>//localhost:1313/events/heartstopper3/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper4/</loc>
+    <loc>//localhost:1313/events/heartstopper4/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper5/</loc>
+    <loc>//localhost:1313/events/heartstopper5/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper6/</loc>
+    <loc>//localhost:1313/events/heartstopper6/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper7/</loc>
+    <loc>//localhost:1313/events/heartstopper7/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper8/</loc>
+    <loc>//localhost:1313/events/heartstopper8/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper9/</loc>
+    <loc>//localhost:1313/events/heartstopper9/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/events/heartstopper0/</loc>
+    <loc>//localhost:1313/events/heartstopper0/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/resources/mental_health/</loc>
+    <loc>//localhost:1313/resources/mental_health/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/newsletter/</loc>
+    <loc>//localhost:1313/newsletter/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/resources/queer/</loc>
+    <loc>//localhost:1313/resources/queer/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/resources/</loc>
+    <loc>//localhost:1313/resources/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/resources/sex_ed/</loc>
+    <loc>//localhost:1313/resources/sex_ed/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/FalakSite/thankyou/</loc>
+    <loc>//localhost:1313/thankyou/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
