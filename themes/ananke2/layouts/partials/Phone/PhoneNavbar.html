@@ -1,0 +1,31 @@
+<!-- Hidden checkbox for toggle -->
+<input type="checkbox" id="menu-control" class="dn">
+
+<nav class="flex align-center justify-between items-center pv3 {{ .Site.Params.navClasses }}{{ .Site.Params.nav_dimming_class }}" role="navigation">
+    <label for="menu-control"><img src="svg/menu.svg" class="pl2" alt="Menu"></label>
+    <strong>Falak</strong>
+    <strong style="background-color: #0000; color: #0000;">Falak</strong>
+</nav>
+
+
+<!-- Fullscreen popup menu -->
+<div id="fullscreen-menu" class="z-999 fixed top-0 left-0 w-100 h-100 flex items-center justify-center {{ .Site.Params.phoneheader.dimming_class }}">
+  {{ if .Site.Menus.main2 }}
+  <div class="flex flex-column items-center justify-center center">
+    <ul class='flex flex-column items-center justify-center pa0'>
+      {{ range .Site.Menus.main2 }}
+      <li class="list f5 f4-ns fw4 dib">
+        <h4>
+        <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
+          {{ .Name }}
+        </a>
+        </h4>
+      </li>
+      {{ end }}
+    </ul>
+    {{ partialCached "social/follow" . }}
+  </div>
+  {{ end }}
+    <!-- Close button -->
+    <label for="menu-control" class="absolute top-2 right-1 pa3 pointer"><img src="svg/close.svg" class="pl2" alt="close"></label>
+</div>

@@ -1,0 +1,16 @@
+/* Styles when #menu-control is unchecked */
+#menu-control:not(:checked) ~ #fullscreen-menu {
+  display: none; /* Hides the menu when the checkbox is unchecked */
+}
+
+/* Styles when #menu-control is checked */
+#menu-control:checked ~ #fullscreen-menu {
+  display: flex; /* Shows the menu when the checkbox is checked */
+}
+
+/* Prevent scrolling when menu is open */
+#menu-control:checked ~ body {
+  overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none; /* For older IE/Edge */
+}

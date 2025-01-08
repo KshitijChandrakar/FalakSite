@@ -2,8 +2,7 @@
   max-height: 60vh;
   overflow: hidden;
 }
-.height30vh {
-  max-height: 40vh;
+.phoneHeaderHeight {
   overflow: hidden;
 }
 .height-fit-content {

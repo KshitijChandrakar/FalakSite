@@ -1,0 +1,45 @@
+{{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+{{ $header_class :=  site.Params.header_class | default "" }}
+{{ if $featured_image }}
+{{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
+{{ $featured_image_class := site.Params.featured_image_class | default "cover bg-top" }}
+<div class="flex flex-column">
+  {{ partial "Desktop/DesktopNavbar" .}}
+  <header class="{{ $header_class }} height60vh">
+    {{ $cover_dimming_class := site.Params.cover_dimming_class | default "bg-black-60" }}
+    <div class="{{ $cover_dimming_class }}">
+      <img src='{{ $featured_image }}' class="{{ $featured_image_class }}" alt="Site header image">
+      {{ if eq .Params.HideTitle "true" }}
+      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+          {{ .Title | default .Site.Title }}
+        </h1>
+        {{ with .Params.description }}
+        <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+          {{ . }}
+        </h2>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </header>
+</div>
+{{ else }}
+<header>
+  <div class="flex flex-column">
+    {{ partial "Desktop/DesktopNavbar" .}}
+    <div class="pb3-m pb6-l {{ .Site.Params.background_color_class | default "bg-black" }}">
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 near-black mb0 lh-title">
+          {{ .Title | default .Site.Title }}
+        </h1>
+        {{ with .Params.description }}
+        <h2 class="fw2 f5 f3-l near-black measure-wide-l center lh-copy mt3 mb4">
+          {{ . }}
+        </h2>
+        {{ end }}
+      </div>
+    </div>
+</header>
+</div>
+{{ end }}

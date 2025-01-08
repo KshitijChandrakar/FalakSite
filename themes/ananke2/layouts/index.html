@@ -1,10 +1,10 @@
 {{ define "main" }}
 <article class="">
   {{- .Content -}}
-  {{ partial "IndexAbout" . }}
+  {{ partial "Homepage/IndexAbout" . }}
   <!---------------------------------------------------------------------------->
-  {{ partial "IndexPastEvents" . }}
+  {{ partial "Homepage/IndexPastEvents" . }}
   <!---------------------------------------------------------------------------->
-  {{ partial "IndexRecentBlog" . }}
+  {{ partial "Homepage/IndexRecentBlog" . }}
 </article>
 {{ end }}
