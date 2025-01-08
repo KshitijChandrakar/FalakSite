@@ -1,5 +1,9 @@
-.height75 {
+.height60vh {
   max-height: 60vh;
+  overflow: hidden;
+}
+.height30vh {
+  max-height: 40vh;
   overflow: hidden;
 }
 .height-fit-content {
