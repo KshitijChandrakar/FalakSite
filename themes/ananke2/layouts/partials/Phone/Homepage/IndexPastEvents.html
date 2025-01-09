@@ -1,20 +1,52 @@
-<section class="flex-ns flex-wrap justify-around mt5 flex-column items-center">
-  <h2> Previous Events: </h2>
-  <div class="flex justify-center items-center">
-      {{ $pages := first 6 (where .Site.RegularPages "Section" "events") }}
-      {{ $pages = $pages.ByTitle }}
-      {{ $paginator := .Paginate $pages 2 }}
-    <button id="prevBtn" class="arrow material-symbols-outlined" data-url="{{ with $paginator.Prev }}{{ .URL }}{{ end }}" {{ if not $paginator.HasPrev }}disabled{{ end }}>keyboard_arrow_left</button>
-    <div class="" id="content">
-      {{ range  $paginator.Pages }}
-      <a href="{{ .RelPermalink }}">
-        {{ with partialCached "func/GetFeaturedImage" . . }}
-        <img src="{{ . }}" alt="" class="mw5 ph2">
+<!-- <section class="flex-ns flex-wrap justify-around mt5 flex-column items-center"> -->
+
+<section>
+  <h2>Recent Blog:</h2>
+  <div class="overflow-scroll" id="contentPhone">
+      <style media="screen">
+
+      </style>
+      <div class="flex justify-start items-center flex-nowrap" style="scroll-snap-type: x mandatory;">
+        <button id="scrollLeft" class="z-999 absolute h-50 left-0 arrow material-symbols-outlined">keyboard_arrow_left</button>
+        <button id="scrollRight" class="z-999 absolute h-50 right-0 arrow material-symbols-outlined">keyboard_arrow_right</button>
+        {{ $Phonepages := first 6 (where .Site.RegularPages "Section" "events") }}
+        {{ range $Phonepages }}
+        <div class="center" style="scroll-snap-align: start;">
+        <a href="{{ .RelPermalink }}" class="ph2">
+          {{ with partialCached "func/GetFeaturedImage" . . }}
+          <img src="{{ . }}" alt="" class=" h-auto" style=" padding-left: 15vw; max-width: 70vw;">
+          {{ end }}
+        </a>
+      </div>
         {{ end }}
-      </a>
-      {{ end }}
+      </div>
     </div>
-    <button id="nextBtn" class="arrow material-symbols-outlined" data-url="{{ with $paginator.Next }}{{ .URL }}{{ end }}" {{ if not $paginator.HasNext }}disabled{{ end }}>keyboard_arrow_right</button>
-    <script src="/js/Ajax.js" charset="utf-8"></script>
-  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contentPhone = document.getElementById('contentPhone');
+      const scrollLeftButton = document.getElementById('scrollLeft');
+      const scrollRightButton = document.getElementById('scrollRight');
+
+      // Function to calculate scroll amount in vw (20% of viewport width)
+      const getScrollAmount = () => window.innerWidth * 0.868; // 20% of viewport width
+
+      // Scroll left function
+      scrollLeftButton.addEventListener('click', () => {
+        const scrollAmount = getScrollAmount();
+        contentPhone.scrollBy({
+          left: -scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+
+      // Scroll right function
+      scrollRightButton.addEventListener('click', () => {
+        const scrollAmount = getScrollAmount();
+        contentPhone.scrollBy({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </section>

@@ -1,10 +1,48 @@
-<section class="flex-ns flex-wrap justify-around mt5 flex-column items-center">
-  <h2>Recent Blog</h2>
-  <div class="flex justify-center items-center">
-    {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
-    <div class="relative w-100 w-30-l mb4 mh4 bg-white">
-      {{ .Render "summary" }}
+<!-- <section class="flex-ns flex-wrap justify-around mt5 flex-column items-center"> -->
+
+<section>
+  <h2>Previous Events:</h2>
+  <div class="overflow-scroll" id="contentPhone">
+      <style media="screen">
+
+      </style>
+      <div class="flex justify-start items-center flex-nowrap" style="scroll-snap-type: x mandatory;">
+        <button id="scrollLeft" class="z-999 absolute h-50 left-0 arrow material-symbols-outlined">keyboard_arrow_left</button>
+        <button id="scrollRight" class="z-999 absolute h-50 right-0 arrow material-symbols-outlined">keyboard_arrow_right</button>
+        {{ $Phonepages := first 3 (where .Site.RegularPages "Section" "events") }}
+        {{ range $Phonepages }}
+        <div class="center" style="scroll-snap-align: start; padding-left: 30vh">
+          {{ .Render "summary" }}
+        </div>
+        {{ end }}
+      </div>
     </div>
-    {{ end }}
-  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const contentPhone = document.getElementById('contentPhone');
+      const scrollLeftButton = document.getElementById('scrollLeft');
+      const scrollRightButton = document.getElementById('scrollRight');
+
+      // Function to calculate scroll amount in vw (20% of viewport width)
+      const getScrollAmount = () => window.innerWidth * 0.868; // 20% of viewport width
+
+      // Scroll left function
+      scrollLeftButton.addEventListener('click', () => {
+        const scrollAmount = getScrollAmount();
+        contentPhone.scrollBy({
+          left: -scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+
+      // Scroll right function
+      scrollRightButton.addEventListener('click', () => {
+        const scrollAmount = getScrollAmount();
+        contentPhone.scrollBy({
+          left: scrollAmount,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </section>
