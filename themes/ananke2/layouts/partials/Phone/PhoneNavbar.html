@@ -2,8 +2,8 @@
 <input type="checkbox" id="menu-control" class="dn">
 
 <nav class="flex align-center justify-between items-center pv3 {{ .Site.Params.navClasses }}{{ .Site.Params.nav_dimming_class }}" role="navigation">
-    <label for="menu-control"><img src="svg/menu.svg" class="pl2" alt="Menu"></label>
-    <strong>Falak</strong>
+    <label for="menu-control"><img src="/svg/menu.svg" class="pl2" alt="Menu"></label>
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib"><h4 class ="pa0 ma0">{{ $.Site.Title }}</h4></a>
     <strong style="background-color: #0000; color: #0000;">Falak</strong>
 </nav>
 
@@ -27,5 +27,5 @@
   </div>
   {{ end }}
     <!-- Close button -->
-    <label for="menu-control" class="absolute top-2 right-1 pa3 pointer"><img src="svg/close.svg" class="pl2" alt="close"></label>
+    <label for="menu-control" class="absolute top-2 right-1 pa3 pointer"><img src="/svg/close.svg" class="pl2" alt="close"></label>
 </div>

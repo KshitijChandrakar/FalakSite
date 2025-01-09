@@ -29,7 +29,7 @@ filename = "sitemap.xml"
 
 [params]
 custom_css = ["palate.css", "animations.css", "EventsStyles.css", "PhoneMenu.css"]
-custom_js = ["redirectScriptColor.js"]
+custom_js = ["/js/redirectScriptColor.js"]
 favicon = "Falak_Logo.png"
 author = ""
 text_color = ""

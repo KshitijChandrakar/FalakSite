@@ -1,10 +1,18 @@
 {{ define "main" }}
-<article class="">
+<article class="dn db-l">
   {{- .Content -}}
-  {{ partial "Homepage/IndexAbout" . }}
+  {{ partial "Desktop/Homepage/IndexAbout" . }}
   <!---------------------------------------------------------------------------->
-  {{ partial "Homepage/IndexPastEvents" . }}
+  {{ partial "Desktop/Homepage/IndexPastEvents" . }}
   <!---------------------------------------------------------------------------->
-  {{ partial "Homepage/IndexRecentBlog" . }}
+  {{ partial "Desktop/Homepage/IndexRecentBlog" . }}
+</article>
+<article class="db dn-l">
+  {{- .Content -}}
+  {{ partial "Phone/Homepage/IndexAbout" . }}
+  <!---------------------------------------------------------------------------->
+  {{ partial "Phone/Homepage/IndexPastEvents" . }}
+  <!---------------------------------------------------------------------------->
+  {{ partial "Phone/Homepage/IndexRecentBlog" . }}
 </article>
 {{ end }}
